@@ -9,5 +9,10 @@ O uso de branches no Git traz várias vantagens. Em cada branch, podemos trabalh
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+Os conflitos de merge surgem quando o Git não consegue combinar automaticamente as alterações feitas em diferentes branches ou ao aplicar mudanças de um stash com o comando pop. Isso pode acontecer, por exemplo, quando duas pessoas editam a mesma linha de um ficheiro ou quando um ficheiro é apagado numa branch e editado em outra. Nesses casos, o Git não consegue decidir qual versão deve prevalecer, resultando num conflito que precisa ser resolvido manualmente.
+
+Para resolver um conflito, o primeiro passo é identificar quais ficheiros estão em conflito. Após um merge ou pop, o Git informa quais são esses ficheiros, que ficam marcados como "unmerged". É necessário abrir esses ficheiros no editor, onde o Git destaca as partes em conflito com símbolos especiais. Depois, deve-se decidir quais mudanças manter, optando por uma das versões, combinando-as ou criando uma nova solução. Após resolver os conflitos, guarda as alterações e usa git add nome-do-ficheiro para adicionar os ficheiros resolvidos. Por fim, conclui o merge com git commit -m "Resolução de conflitos". É também útil utilizar ferramentas de merge disponíveis em editores de código para facilitar o processo e comunicar-se com a equipa para evitar conflitos desnecessários.
+
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
