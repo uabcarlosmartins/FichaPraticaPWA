@@ -4,6 +4,9 @@ Push envia os commits que estão no repositório local para o repositório remot
 Pop restaura alterações temporárias que estavam guardadas no stash, trazendo-as de volta ao repositório.
 
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+O uso de branches no Git traz várias vantagens. Em cada branch, podemos trabalhar numa funcionalidade ou correcção de forma isolada, sem mexer no código principal, o que ajuda a manter o desenvolvimento seguro e organizado. Assim, mais pessoas podem colaborar em diferentes partes do projecto ao mesmo tempo, sem gerar conflitos. Além disso, o histórico de commits fica mais claro, mostrando a evolução de cada parte do trabalho. No fim, isto permite que o código na branch principal permaneça sempre estável, enquanto continuamos a desenvolver e testar noutros ramos.
+
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
