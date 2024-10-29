@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programação Web Avançada</title>
+  </head>
+  <body>
+    <main>
+      <h1>Programação Web Avançada</h1>
+
+      <ol>
+        <li>
+          <h2>
+            O que são operações de <i>“Commit”</i>, <i>“Push”</i> e
+            <i>“Pop”</i> efetuadas num repositório?
+          </h2>
+          <p>
+            <i>“Commit”</i> regista as alterações localmente no repositório com
+            uma mensagem descritiva sobre o que foi alterado.
+            <i>“Push”</i> envia os commits que estão no repositório local para o
+            repositório remoto, permitindo que outros vejam as actualizações.
+            <i>“Pop”</i> restaura alterações temporárias que estavam guardadas
+            no stash, trazendo-as de volta ao repositório.
+          </p>
+        </li>
+        <li>
+          <h2>Quais sáo as vantagens de usar Branchs num repositório git?</h2>
+          <p>
+            O uso de branches no Git traz várias vantagens. Em cada branch,
+            podemos trabalhar numa funcionalidade ou correcção de forma isolada,
+            sem mexer no código principal, o que ajuda a manter o
+            desenvolvimento seguro e organizado. Assim, mais pessoas podem
+            colaborar em diferentes partes do projecto ao mesmo tempo, sem gerar
+            conflitos. Além disso, o histórico de commits fica mais claro,
+            mostrando a evolução de cada parte do trabalho. No fim, isto permite
+            que o código na branch principal permaneça sempre estável, enquanto
+            continuamos a desenvolver e testar noutros ramos.
+          </p>
+        </li>
+        <li>
+          <h2>
+            Nos Merges de conteúdos resultantes de um <i>“Pop”</i> podem
+            resultar em conflitos. Em que consistem e como podem ser resolvidos
+            esses conflitos?
+          </h2>
+          <p>
+            Os conflitos de merge surgem quando o Git não consegue combinar
+            automaticamente as alterações feitas em diferentes branches ou ao
+            aplicar mudanças de um stash com o comando <i>“Pop”</i>. Isso pode
+            acontecer, por exemplo, quando duas pessoas editam a mesma linha de
+            um ficheiro ou quando um ficheiro é apagado numa branch e editado em
+            outra. Nesses casos, o Git não consegue decidir qual versão deve
+            prevalecer, resultando num conflito que precisa ser resolvido
+            manualmente. Para resolver um conflito, o primeiro passo é
+            identificar quais ficheiros estão em conflito. Após um merge ou
+            <i>“Pop”</i>, o Git informa quais são esses ficheiros, que ficam
+            marcados como "unmerged". É necessário abrir esses ficheiros no
+            editor, onde o Git destaca as partes em conflito com símbolos
+            especiais. Depois, deve-se decidir quais mudanças manter, optando
+            por uma das versões, combinando-as ou criando uma nova solução. Após
+            resolver os conflitos, guarda as alterações e usa git add
+            nome-do-ficheiro para adicionar os ficheiros resolvidos. Por fim,
+            conclui o merge com git commit -m "Resolução de conflitos". É também
+            útil utilizar ferramentas de merge disponíveis em editores de código
+            para facilitar o processo e comunicar-se com a equipa para evitar
+            conflitos desnecessários.
+          </p>
+        </li>
+        <li>
+          <h2>
+            <i>“Clone”</i> e <i>“Fork”</i> são formas diferentes de replicar um
+            repositório Git. Quais as diferenças entre eles?
+          </h2>
+          <p>
+            A principal diferença entre os comandos git <i>“Clone”</i> e
+            <i>“Fork”</i> é que o “git clone“ cria uma cópia local de um
+            repositório remoto, permitindo que você trabalhe nele diretamente.
+            Já o “fork“ é uma cópia independente do repositório criada na
+            plataforma de hospedagem, o que permite que você faça alterações à
+            vontade e, se desejar, envie essas alterações para o repositório
+            original através de um pull request.
+          </p>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
